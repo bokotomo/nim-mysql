@@ -14,3 +14,18 @@ docker-compose build
 docker-compose up -d
 docker-compose exec app bash
 ```
+
+・mysql初期化
+```
+make db_init
+```
+
+・./src/main.nimの実行
+```
+make run
+```
+
+・test
+```
+make test
+```
