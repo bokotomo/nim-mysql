@@ -1,6 +1,6 @@
 -- マイグレーションはめんどいからやってない
 DROP DATABASE IF EXISTS dev;
-CREATE DATABASE dev;
+CREATE DATABASE dev DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_bin;
 USE dev;
 
 CREATE TABLE test (
@@ -8,4 +8,4 @@ CREATE TABLE test (
     category INT(11) NOT NULL,
     value INT(11) NOT NULL,
     INDEX idx_category(category)
-)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+)ENGINE=InnoDB;
